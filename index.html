@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="description" content="Description">
+	<link
+		rel="shortcut icon"
+		href="http://blog.dota2.com/favicon.ico"
+		type="image/x-icon"
+	/>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css"> -->
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+	<!-- <link rel="stylesheet" href="//unpkg.com/docsify/themes/buble.css"> -->
+	<!-- <link rel="stylesheet" href="//unpkg.com/docsify/themes/pure.css"> -->
+	<!-- <link rel="stylesheet" href="//unpkg.com/docsify/themes/dark.css"> -->
+	<link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+</head>
+<body>
+	<div id="app"></div>
+	<script>
+		window.$docsify = {
+			name: '内置 Japi',
+			repo: 'https://github.com/w4454962/embedded-japi-plugin.git',
+			loadSidebar: true,
+			loadNavbar: true,
+			search: 'auto', // default
+		}
+		
+	</script>
+	<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+	<script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+	<script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
+	<script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+	<script>
+		const gitalk = new Gitalk({
+			clientID: "5c34a5b7d1f11614a12b",
+			clientSecret: "2e99c31954ce5936054700cc26e11a094c64a798",
+			repo: "Dota2-API-Docsify",
+			owner: "bigciba",
+			admin: ["bigciba"],
+			id: location.pathname,
+			// facebook-like distraction free mode
+			distractionFreeMode: false
+		});
+	</script>
+	<style>
+		:root {
+			--content-max-width                 : 88em;
+			/* --table-body-border-color           : ; */
+			/* --table-body-border-width           : ; */
+			/* --table-cell-border-color           : var(--mono-tint3);
+			--table-cell-border-width           : 1px; */
+			/* --table-cell-padding                : 0.75em 0.5em; */
+			--table-head-background             :  var(--mono-shade3);
+			/* --table-head-border-color           : var(--table-cell-border-color); */
+			/* --table-head-border-width           : 1px; */
+			/* --table-head-font-weight            : var(--strong-font-weight); */
+			--table-row-even-background         : var(--mono-tint1);
+			--table-row-odd-background          : var(--mono-shade1);
+		}
+	</style>
+</body>
+</html>
