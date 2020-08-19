@@ -4,6 +4,7 @@
 
 内置lua引擎基于ydlua进行扩展, 请先阅读
 * [ydlua引擎文档](https://github.com/actboy168/jass2lua/blob/master/lua-engine.md)
+* [内置lua引擎](Lua/引擎变动)
 
 ---
 ## 本地启动

@@ -2,12 +2,12 @@
 
 注意 本地要有平台插件 或者平台环境才能使用。
 
-### 调用接口 
+### 接口 
 
 * 支持注册闭包回调
+* 支持jass.hook 对dzapi 进行hook 重载
 
 ```lua
-    local jass = require 'jass.common'
     local dzapi = require 'jass.dzapi'
 
     --异步鼠标移动事件
@@ -20,7 +20,6 @@
 ### 部分接口封装
 
 ```lua
-    local jass = require 'jass.common'
     local dzapi = require 'jass.dzapi'
     local japi = requore 'jass.japi'
 
