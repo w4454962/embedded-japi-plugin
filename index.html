@@ -37,15 +37,25 @@
 	<script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
 	<script>
 		const gitalk = new Gitalk({
-			clientID: "5c34a5b7d1f11614a12b",
-			clientSecret: "2e99c31954ce5936054700cc26e11a094c64a798",
-			repo: "Dota2-API-Docsify",
-			owner: "bigciba",
-			admin: ["bigciba"],
-			id: location.pathname,
+			clientID: "6ee8116016b1decd846e",
+			clientSecret: "f9ba53249cf278670e6d0255c1bc2ce27f5056e7",
+			repo: "embedded-japi-plugin",
+			owner: "w4454962",
+			admin: ["w4454962","PhoenixZeng"],
+			// id: location.pathname,
 			// facebook-like distraction free mode
-			distractionFreeMode: false
+			distractionFreeMode: false,
+			title: location.hash.match(/#(.*?)([?]|$)/)[1],
+      			id: location.hash.match(/#(.*?)([?]|$)/)[1],
 		});
+		// 监听URL中hash的变化，如果发现换了一个MD文件，那么刷新页面，解决整个网站使用一个gitalk评论issues的问题。
+		    window.onhashchange = function(event){
+		      if(event.newURL.split('?')[0] !== event.oldURL .split('?')[0]) {
+			location.reload()
+		      }
+		    }
+		    // 由于docsify/lib/plugins/gitalk.min.js文件中已经有下面代码了，所以不需要在写一次了
+		    // gitalk.render('gitalk-container')
 	</script>
 	<style>
 		:root {
