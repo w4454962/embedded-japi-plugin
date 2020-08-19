@@ -25,10 +25,10 @@ jass里面 有2种函数
     local jass = require 'jass.common'
     local hook = require 'jass.hook'
 
-    local GetTriggerUnit = GetTriggerUnit
+    local DisplayTextToPlayer = DisplayTextToPlayer
     function hook.DisplayTextToPlayer(player, x, y, msg)
         print(player, x, y, msg)
-        return DisplayTextToPlayer(player, x, y, msg)
+        DisplayTextToPlayer(player, x, y, msg)
     end
 ```
 
