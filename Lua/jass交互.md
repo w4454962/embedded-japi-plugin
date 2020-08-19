@@ -1,4 +1,4 @@
-# jass交互
+# jass.code 跟jass进行交互 
 
 jass里面 有2种函数  
 
