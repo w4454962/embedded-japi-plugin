@@ -37,10 +37,10 @@
 	<script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
 	<script>
 		var path = decodeURI(location.hash.match(/#(.*?)([?]|$)/)[1]);
-		if (path) {
+		if (!path) {
 			path = location.hash.substr(1);
 		}
-		if (path) {
+		if (!path) {
 			path = location.hash;
 		}
 		const gitalk = new Gitalk({
