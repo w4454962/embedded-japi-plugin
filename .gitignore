@@ -1,1 +1,6 @@
 ___*
+*.sh
+*.log
+*.pid
+httpHandler.js
+
