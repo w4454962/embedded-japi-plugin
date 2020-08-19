@@ -5,7 +5,8 @@ jass里面 有2种函数
 * 2是 blizzard.j 以及war3map.j 里的 自定义函数 简称bj
 
 
-### lua调用cj 原ydlua 功能
+### lua调用cj 
+* 原ydlua 功能
 
 ```lua
     local jass = require 'jass.common'
@@ -14,7 +15,8 @@ jass里面 有2种函数
 ```
 
 
-### 重载cj jass调用lua  原ydlua 功能 
+### 重载cj jass调用lua  
+* 原ydlua 功能 
 
 * 由于cj 参数类型 参数数量 返回值 都是固定的 不便做扩展
 
@@ -29,9 +31,21 @@ jass里面 有2种函数
     end
 ```
 
-### lua调用bj 内置lua 功能
+### 遍历cj 函数
+* 原ydlua 功能 
 
+```lua
+    local jass = require 'jass.common'
+    for name, func in pairs(jass) do 
+        print(name, func)
+    end
+
+```
+
+### lua调用bj 
+* 内置lua 功能
 * 要注意优化混淆j文件后的名字
+
 ```lua
     local code = require 'jass.code'
 
@@ -40,11 +54,9 @@ jass里面 有2种函数
 ```
 
 ### 重载bj jass调用lua
-
+* 内置lua 功能
 * bj可以自定义扩展参数类型 参数数量 
 * 要注意优化混淆j文件后的名字
-
-#### 例子
 
 ```jass
     function add takes integer a, integer b returns integer 
@@ -71,5 +83,15 @@ jass里面 有2种函数
 
     code.test() --控制台将会输出 30 而游戏内屏幕不会打印。
 
-    
+```
+
+### 遍历bj 函数
+* 内置lua 功能
+
+```lua
+    local code = require 'jass.code'
+    for name, func in pairs(code) do 
+        print(name, func)
+    end
+
 ```

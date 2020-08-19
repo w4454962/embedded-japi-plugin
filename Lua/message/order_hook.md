@@ -54,12 +54,12 @@
         end,
 
     }
-    
+
     function message.order_hook(info)
         local unit_handle = japi.GetRealSelectUnit() 
         local event = event_map[info[1]]
         if event then 
-            return event(info)
+            return event(unit_handle, info)
         end 
         return true 
     end
