@@ -12,6 +12,15 @@
 
 ---
 
+
+--- 
+文档分类
+
+* [Japi](Japi/_sidebar.md)
+* [Lua](Lua/_sidebar.md)
+* [界面](Script/界面/_sidebar.md)
+
+---
 ## 本地启动
 
 本项目依赖nodejs，npm，[docsify](https://docsify.js.org/)。
