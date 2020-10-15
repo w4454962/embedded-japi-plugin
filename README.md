@@ -14,9 +14,9 @@
 
 
 --- 
-文档分类
+文档分类 所有接口都通用1.24e 1.26 1.27
 
-* [Japi](Japi/_sidebar.md)
+* [Japi](Japi/_sidebar.md) 
 * [Lua](Lua/_sidebar.md)
 * [界面](Script/界面/_sidebar.md)
 
