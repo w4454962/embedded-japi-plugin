@@ -11,12 +11,13 @@
 * [ydlua引擎文档](https://github.com/actboy168/jass2lua/blob/master/lua-engine.md)
 
 ---
-
+关注 https://github.com/w4454962/embedded-japi-plugin 仓库 可以随时获得文档的更新
 
 --- 
 文档分类 所有接口都通用1.24e 1.26 1.27
 
 * [Japi](Japi/_sidebar.md) 
+* [Jass](Jass/_sidebar.md) 
 * [Lua](Lua/_sidebar.md)
 * [界面](Script/界面/_sidebar.md)
 
