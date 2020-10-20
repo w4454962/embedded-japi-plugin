@@ -1,5 +1,5 @@
 
-# 获取FPS帧数
+# 解锁FPS帧数上限
 ```jass
 function UnlockFps takes boolean is_unlock returns nothing
 ```
