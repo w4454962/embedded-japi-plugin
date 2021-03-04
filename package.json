@@ -1,0 +1,20 @@
+{
+    "name": "embedded-japi-plugin-doc",
+    "version": "1.0.0",
+    "description": "embedded-japi-plugin-doc",
+    "author": "w4454962",
+    "private": true,
+    "scripts": {
+        "build": "docsify serve"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+    },
+    "engines": {
+        "node": ">= 4.0.0",
+        "npm": ">= 3.0.0"
+    },
+    "browserslist": [
+    ]
+}
