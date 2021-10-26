@@ -17,6 +17,8 @@ function SetFrameLimitScreen takes boolean is_limit returns nothing
 ```jass
 
 call SetFrameLimitScreen(true) //重新锁定
+```
+
 
 ```lua
 
