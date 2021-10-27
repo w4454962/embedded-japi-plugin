@@ -26,7 +26,7 @@
 * [Japi](Japi/_sidebar.md) 
 * [Lua](Lua/_sidebar.md)
 * [界面](Script/界面/_sidebar.md)
-
+* [例子](Script/例子/_sidebar.md)
 ---
 
 
