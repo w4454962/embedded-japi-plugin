@@ -2,14 +2,10 @@
 <html lang="zh">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>内置Japi文档</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta name="description" content="Description">
-	<!-- <link
-		rel="shortcut icon"
-		href="http://blog.dota2.com/favicon.ico"
-		type="image/x-icon"
-	/> -->
+	<meta name="description" content="内置Japi文档网站">
+
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<!-- <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css"> -->
 	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
@@ -51,29 +47,36 @@
 	<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-lua.min.js"></script>
 	<script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
 	<script>
-		var path = decodeURI(location.hash.match(/#(.*?)([?]|$)/)[1]);
-		if (!path) {
-			path = location.hash.substr(1);
+		function init() {
+			var list = location.hash.match(/#(.*?)([?]|$)/)
+			if (list) {
+				var path = decodeURI(list[1]);
+				if (!path) {
+					path = location.hash.substr(1);
+				}
+				if (!path) {
+					path = location.hash;
+				}
+				gitalk = new Gitalk({
+					clientID: "6ee8116016b1decd846e",
+					clientSecret: "f9ba53249cf278670e6d0255c1bc2ce27f5056e7",
+					repo: "embedded-japi-plugin",
+					owner: "w4454962",
+					admin: ["w4454962","PhoenixZeng","luciouskami"],
+					// id: location.pathname,
+					// facebook-like distraction free mode
+					distractionFreeMode: false,
+					title: path,
+					id: path,
+				});
+			}
 		}
-		if (!path) {
-			path = location.hash;
-		}
-		const gitalk = new Gitalk({
-			clientID: "6ee8116016b1decd846e",
-			clientSecret: "f9ba53249cf278670e6d0255c1bc2ce27f5056e7",
-			repo: "embedded-japi-plugin",
-			owner: "w4454962",
-			admin: ["w4454962","PhoenixZeng","luciouskami"],
-			// id: location.pathname,
-			// facebook-like distraction free mode
-			distractionFreeMode: false,
-			title: path,
-      		id: path,
-		});
+		init()
 		// 监听URL中hash的变化，如果发现换了一个MD文件，那么刷新页面，解决整个网站使用一个gitalk评论issues的问题。
 		window.onhashchange = function(event){
 			if(event.newURL.split('?')[0] !== event.oldURL .split('?')[0]) {
-				location.reload()
+				// location.reload()
+				init()
 			}
 		}
 		// 由于docsify/lib/plugins/gitalk.min.js文件中已经有下面代码了，所以不需要在写一次了
