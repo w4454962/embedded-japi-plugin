@@ -1,9 +1,9 @@
-
+# 该仓库已废弃
 由于该文档服务端框架容易被攻击 已经用静态编译的方式重新实现了文档网站 
 
 新的文档网站仓库在 https://github.com/PhoenixZeng/embedded-japi-vue-press  
 
-# 该仓库已废弃
+
 
 # 内置JAPI
 
