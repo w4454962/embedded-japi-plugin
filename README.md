@@ -10,10 +10,9 @@
 
 网址 http://japi.war3rpg.top/  点击查看 可以收藏起来
 
-仓库 https://github.com/w4454962/embedded-japi-plugin  可以随时获得文档的更新
 
 lua交流 有需要的同学可以在群里讨论
-旧群被封，新lua地图群1019770872
+旧群被封  新的lua3群710331384
  
 ---
 
