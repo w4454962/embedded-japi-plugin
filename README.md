@@ -1,3 +1,9 @@
+
+由于该文档服务端框架容易被攻击 已经用静态编译的方式重新实现了文档网站 
+
+新的文档网站仓库在 https://github.com/PhoenixZeng/embedded-japi-vue-press  
+
+
 # 内置JAPI
 
 地图内置japi插件的文档
