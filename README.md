@@ -3,6 +3,7 @@
 
 新的文档网站仓库在 https://github.com/PhoenixZeng/embedded-japi-vue-press  
 
+# 该仓库已废弃
 
 # 内置JAPI
 
